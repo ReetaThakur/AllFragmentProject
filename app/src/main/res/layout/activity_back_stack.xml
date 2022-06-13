@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+    tools:context=".backStackFragment.BackStackActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add A"
+                android:layout_weight="1"
+                android:id="@+id/btnAddA"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove A"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:id="@+id/btnRemoveA"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace A\nwith B \nwithout backstack"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:id="@+id/btnReplaceAWithoutBackstack"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace A with\nB with\nbackstack"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:id="@+id/btnReplceAWithBWithBackstack"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add B"
+                android:layout_weight="1"
+                android:id="@+id/btnAddB"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove B"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:id="@+id/btnRemoveB"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace B with A"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:id="@+id/btnReplaceBWithA"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frmContainer"/>
+
+    </LinearLayout>
+</layout>
